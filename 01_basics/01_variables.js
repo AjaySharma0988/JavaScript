@@ -1,3 +1,6 @@
+// const //is used for declaration
+
+
 const accountId = 1234567
 let accountEmail ="ajay@gmail.com"
 var accountPassword ="1234"

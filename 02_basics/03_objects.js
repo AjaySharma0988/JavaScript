@@ -1,4 +1,4 @@
-//singleyion*
+//singleyion* // in 04_objects.js fole
 //object.create*
 
 // object literals
