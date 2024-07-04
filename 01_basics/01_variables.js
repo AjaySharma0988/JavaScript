@@ -1,5 +1,5 @@
 // const //is used for declaration
-
+// *variables can hold any thing like object, function, jasun valuec
 
 const accountId = 1234567
 let accountEmail ="ajay@gmail.com"
