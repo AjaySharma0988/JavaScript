@@ -7,7 +7,7 @@ const dc_heros = ["superma", "batman", "flash"]
 // const newHerows = marvel_heros.concat(dc_heros)
 // console.log(newHerows);
 //           OR
-const  allNewHerows = [...dc_heros, ...marvel_heros] // best one called spread brakes array into individusl element and cobine it in a new array
+const  allNewHerows = [...dc_heros, ...marvel_heros] // best one called "spread" brakes array into individusl element and cobine it in a new array
 //console.log(allNewHerows)
 
 // not mostly used but helpfull
