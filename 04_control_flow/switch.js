@@ -1,4 +1,4 @@
-// switch (key) {
+// switch (key) { //default syntex
 //     case value:
         
 //         break;
@@ -7,23 +7,25 @@
 //         break;
 // }
 
-const month = "march"
+const month = "Apr"
 
 switch (month) {
-    case "jan":
-        console.log("January");
+    case "Jan":
+        console.log("1")
         break;
-    case "feb":
-        console.log("feb");
+    case "Feb":
+        console.log("2")
         break;
-    case "march":
-        console.log("march");
+    case "Mar":
+        console.log("3")
         break;
-    case "april":
-        console.log("april");
+    case "Apr":
+        console.log("4")
+        break;
+    case "MAi":
+        console.log("5")
         break;
 
     default:
-        console.log("default case match");
         break;
 }
