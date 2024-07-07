@@ -1,6 +1,6 @@
 // Array spacific loop
 // for of 
-
+// array in forof loop
 const arr = [1,2,3,4,5,6,7,8,9]
 
 for (const num of arr) {
@@ -13,7 +13,7 @@ for (const great of greating) {
     // console.log(`the greating to ${great}`);
 }
 
-// Maps 
+// Maps in forof loop
 
 const map = new Map()
 map.set('IN',"Iandia")
@@ -31,7 +31,7 @@ map.set('RS',"Russia")
 //     console.log(key,':-',value);
 // }
 
-// objects is not iterable
+// object in forof loop is not iterable
 const myObject = {
     game1:"India",
     game2:"russia",
