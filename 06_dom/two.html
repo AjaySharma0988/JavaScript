@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background:black; color: aliceblue; ">
+    <div class = "parent">
+        <div class ="day">sunday</div>
+        <div class ="day">munday</div>
+        <div class ="day">tuesday</div>
+        <div class ="day">wednesday</div>
+        <div class ="day">thursday</div>
+    </div>
+    <script>
+        const parent = document.querySelector('.parent')
+        // console.log(parent)
+        // console.log(parent.children);
+        // console.log(parent.children[1].innerHTML);
+        
+        // for (let i = 0; i < parent.children.length; i++) {
+        //     console.log( parent.children[i].innerHTML);
+            
+        // }
+        parent.children[1].style.color ="green"
+        //console.log(parent.firstElementChild);// to move from parent to child
+        //console.log(parent.lastElementChild); // can use this when we target outeside parent and without going to inner instad can use
+        
+        const dayOne = document.querySelector('.day')
+        // console.log(dayOne);
+        // console.log(dayOne.parentElement);// can use for going from child element to parent 
+        // console.log(dayOne.nextElementSibling);// to move to the next sibling or element
+
+        console.log(parent.childNodes) // to see NodeList
+
+    </script>
+</body>
+</html>
