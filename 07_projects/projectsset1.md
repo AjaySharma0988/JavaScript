@@ -91,7 +91,8 @@ form.addEventListener('submit', function (e) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
-                    or
+                      or
+
 const form = document.querySelector('form') 
 //this use case will give you empty value
 //const Weight = parseInt(document.querySelector('#weight').value)
