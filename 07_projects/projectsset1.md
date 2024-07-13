@@ -91,6 +91,36 @@ form.addEventListener('submit', function (e) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+                    or
+const form = document.querySelector('form') 
+//this use case will give you empty value
+//const Weight = parseInt(document.querySelector('#weight').value)
+
+form.addEventListener('submit',function(s){
+  s.preventDefault()
+  const Hight = parseInt(document.querySelector('#height').value)
+  const Weight = parseInt(document.querySelector('#weight').value)
+  const Results = document.querySelector('#results')
+
+  if(Hight === '' || Hight < 0 || isNaN(Hight)){  // useing as cheacks
+      Results.innerHTML = `please give a valied hight ${Hight}`
+  }else if(Weight === '' || Weight < 0 || isNaN(Weight)){  // useing as cheacks
+      Results.innerHTML = `please give a valied Weight ${Weight}`
+  }else{
+    const bmi = (Weight/((Hight*Hight)/10000)).toFixed(2)
+    
+    //show the result
+    if(bmi<18.6){
+      Results.innerHTML = `<span>${bmi} Under Weight </span>`
+    }else if(bmi >= 18.6 && bmi <= 24.9){
+      Results.innerHTML = `<span>${bmi} Normal Range </span>`
+    }else if(bmi>24.9){
+      Results.innerHTML = `<span>${bmi} Overweight</span>`
+    }
+
+  }
+  
+})
 
 
 ```
