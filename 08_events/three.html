@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All the best</h1>
+    <button id="stop">stop</button>
+    <button id="start">Start</button>
+
+</body>
+<script>
+    let intervalid;
+    const print = function(){
+        console.log("hero",Date.now())
+     }
+     
+    document.querySelector('#start').addEventListener('click',function(){
+        intervalid = setInterval(print,1000)
+        console.log("started")
+    }) 
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalid)
+        console.log("stoped")
+     })
+    
+</script>
+</html>
+
+                          <!-- or
+
+                          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All the best</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    let intervalId; // Declare intervalId in the outer scope
+
+    const print = function(){
+        console.log("hero", Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', function() {
+        if (!intervalId) { // Check if an interval is already running
+            intervalId = setInterval(print, 1000);
+            console.log("Started");
+        }
+    });
+
+    document.querySelector('#stop').addEventListener('click', function() {
+        if (intervalId) { // Check if an interval is running before stopping it
+            clearInterval(intervalId);
+            intervalId = null; // Reset intervalId to null
+            console.log("Stopped");
+        }
+    });
+</script>
+</html> -->
