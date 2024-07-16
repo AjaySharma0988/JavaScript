@@ -286,7 +286,7 @@ const randomColor = function () {
 
 let intervalId;
 const startChangingColor = function () {
-  if (!intervalId) {
+  if (!intervalId) { // we use if to check the condition
     intervalId = setInterval(changeBgColor, 1000);
   }
 
@@ -296,7 +296,7 @@ const startChangingColor = function () {
 };
 const stopChangingColor = function () {
   clearInterval(intervalId);
-  intervalId = null;
+  intervalId = null;//to free the memory and write good code
 };
 
 document.querySelector('#start').addEventListener('click', startChangingColor);
